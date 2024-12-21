@@ -1,0 +1,45 @@
+Version : DeepSN-Net
+Task : denoise
+
+network :
+  is_rgb : True
+  N_1 : 15
+  N_2 : 3
+  M : 4
+  con_num : 4
+
+datasets :
+  train :
+    path : # your trainset path
+    patch_size : 100
+    batch_size : 16
+    aug_mode : 4
+    use_shuffle: true
+
+  test :
+    path : # your testset path
+
+
+train :
+  epoch : 50
+  clip_grad : true
+  loss_type : mix2  #mix1\mix2\mse\Charbonnier
+
+  load :
+    inherit : True
+    model : model_current.pth
+
+  optim:
+    type : AdamW #AdamW
+    init_lr : !!float 1e-3
+    weight_decay : 0 #!!float 1e-3 #!!float 1e-3
+    final_lr : !!float 1e-6
+    scheduler_type : linear #cosine
+
+save:
+  freq : 10000
+  auto_freq : 500
+
+val:
+  freq : 10000
+  windows : -1
