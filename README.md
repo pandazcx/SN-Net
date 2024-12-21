@@ -15,8 +15,8 @@ The official pytorch implementation of the paper:
 >(2) The network structure exhibits strong interpretability.
 
 ### Network Structure
-<img src="figures/overall.png" alt="Framework" style="width: 50%; height: auto;">
-<img src="figures/detail.png" alt="Details" style="width: 50%; height: auto;">
+<img src="figures/overall.png" alt="Framework" style="width: 100%; height: auto;">
+<img src="figures/detail.png" alt="Details" style="width: 100%; height: auto;">
 
 
 ### Installation
@@ -50,10 +50,10 @@ python train.py
 ```
 
 ### Denoising Performance
-<img src="figures/SIDD.png" alt="SIDD benchmark" style="width: 50%; height: auto;">
+<img src="figures/SIDD.png" alt="SIDD benchmark" style="width: 100%; height: auto;">
 
 ### Network Efficiency Comparison
-<img src="figures/Params.png" alt="Comparison" style="width: 30%; height: auto;">
+<img src="figures/Params.png" alt="Comparison" style="width: 75%; height: auto;">
 
 
 ### Citations
