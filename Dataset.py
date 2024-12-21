@@ -2,10 +2,8 @@ import os
 import os.path
 import numpy as np
 import random
-import h5py
 import torch
 import cv2
-import glob
 import torch.utils.data as udata
 
 class Dataset(udata.Dataset):

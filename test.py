@@ -1,12 +1,9 @@
 import torch.utils.data as Data
 import time
 import argparse
-from importlib import import_module
 import Dataset
 import yaml
 import SN_Net as network
-import sys
-sys.path.append("..")
 from utils import *
 
 if __name__ == '__main__':

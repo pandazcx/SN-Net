@@ -1,6 +1,5 @@
 import time
 import torch.utils.data as Data
-from importlib import import_module
 import torch.nn as nn
 from torch.utils.tensorboard import SummaryWriter
 import SN_Net as network
